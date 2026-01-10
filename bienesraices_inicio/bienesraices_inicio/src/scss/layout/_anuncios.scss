@@ -2,19 +2,15 @@
 @use "base/variables" as *;
 @use "sass:color";
 
-@include tablet {
+@include desktop {
   .contenedor-anuncios {
     @include grid(3, 2rem);
   }
 }
 .anuncio {
-  background-color: $gris;
-
-  border-top-left-radius: 15%;
+  background-color: color.adjust($gris, $lightness: 0.5%);
 
   img {
-    border-top-left-radius: 15%;
-    border-bottom-right-radius: 14%;
     border: solid 0.5rem $gris;
   }
   box-shadow: 0.4rem 0.4rem color.adjust($color: $gris, $lightness: -5%);
@@ -31,7 +27,6 @@
   p {
     margin: 0;
   }
-
   .precio {
     color: $verde;
     font-weight: $bold;
@@ -43,16 +38,30 @@
   display: flex;
   list-style: none;
   padding: 0;
+  gap: 1.5rem;
+  justify-content: space-around;
 
   li {
-    flex: 1;
     display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
     img {
-      flex: 0 0 3rem;
-      margin-right: 1rem;
+      width: 5rem;
+      height: 5rem;
+      flex-shrink: 0;
+      @include tablet {
+        width: 6rem;
+        height: 6rem;
+      }
     }
     p {
       font-weight: $black;
+      margin: 0;
+      white-space: nowrap;
+      @include telefono {
+        font-size: 2rem;
+      }
     }
   }
 }
