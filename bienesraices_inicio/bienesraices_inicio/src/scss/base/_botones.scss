@@ -1,0 +1,18 @@
+@use "base/mixins" as *;
+@use "base/variables" as *;
+@use "base/utilidades" as *;
+
+.boton-amarillo {
+  @include boton($amarillo, inline-block, 0.5rem);
+}
+
+.boton-amarillo-block{
+  @include boton($amarillo, block, 0.5rem);
+}
+
+
+.boton-verde {
+  @include boton($verde, block, 2rem);
+  padding: 1.2rem 5rem;
+  border: solid 0.4rem $gris;
+}

@@ -1,0 +1,43 @@
+# Dependencias
+node_modules/
+bower_components/
+
+# Archivos compilados/generados
+dist/
+build/
+*.css.map
+*.js.map
+
+# Archivos de Sass compilados (si compilas a una carpeta específica)
+css/
+*.css
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos del editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.atom/
+
+# Archivos temporales
+*.tmp
+*.temp
+.cache/
+.sass-cache/
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
