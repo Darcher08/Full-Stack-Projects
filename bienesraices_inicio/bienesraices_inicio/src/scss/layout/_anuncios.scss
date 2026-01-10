@@ -15,7 +15,7 @@
   img {
     border-top-left-radius: 15%;
     border-bottom-right-radius: 14%;
-    border: solid .5rem $gris;
+    border: solid 0.5rem $gris;
   }
   box-shadow: 0.4rem 0.4rem color.adjust($color: $gris, $lightness: -5%);
 
@@ -23,7 +23,7 @@
     padding: 2rem;
     h3 {
       font-weight: $bold;
-  //    margin-left: 1rem;
+      //    margin-left: 1rem;
       text-align: center;
     }
   }
@@ -56,4 +56,3 @@
     }
   }
 }
-

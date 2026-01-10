@@ -4,11 +4,13 @@
 @use "base/globales";
 @use "base/utilidades";
 @use "base/botones";
-/*UI*/
 
+/*UI*/
 @use "layout/header";
 @use "layout/navegacion";
 @use "layout/footer";
 @use "layout/iconos";
 @use "layout/anuncios";
 @use "layout/contactar";
+@use "layout/inferior";
+@use "layout/testimoniales";
