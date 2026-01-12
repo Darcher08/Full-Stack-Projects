@@ -38,5 +38,6 @@
 
   &:hover {
     background-color: color.adjust($color: $bgColor, $lightness: -5%);
+    cursor: pointer;
   }
 }

@@ -27,10 +27,16 @@
   p {
     margin: 0;
   }
-  .precio {
-    color: $verde;
-    font-weight: $bold;
-    font-size: 3rem;
+}
+
+.precio {
+  color: $verde;
+  font-weight: $bold;
+  font-size: 3rem;
+  span {
+    color: color.adjust($color: $verde, $lightness: -10%);
+    font-weight: $black;
+    margin-left: 1rem;
   }
 }
 

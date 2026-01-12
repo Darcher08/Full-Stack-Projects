@@ -6,10 +6,9 @@
   @include boton($amarillo, inline-block, 0.5rem);
 }
 
-.boton-amarillo-block{
+.boton-amarillo-block {
   @include boton($amarillo, block, 0.5rem);
 }
-
 
 .boton-verde {
   @include boton($verde, block, 2rem);
