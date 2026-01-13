@@ -1,0 +1,32 @@
+@use "base/variables" as *;
+@use "sass:color";
+
+.dark-mode {
+  background-color: color.adjust($color: $grisOscuro, $lightness: -10%);
+  p {
+    color: $blanco;
+  }
+  a,
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $gris;
+  }
+  .anuncio {
+    background-color: $grisOscuro;
+    border: solid $grisOscuro;
+    box-shadow: 0.4rem 0.4rem #272424bd;
+
+    picture img {
+      border: solid $grisOscuro;
+    }
+    li img {
+      filter: invert(100%);
+    }
+  }
+
+  .boton-verde {
+    border: 0.4rem solid $grisOscuro;
+  }
+}
