@@ -13,14 +13,17 @@
   h4 {
     color: $gris;
   }
+
   .anuncio {
     background-color: $grisOscuro;
     border: solid $grisOscuro;
-    box-shadow: 0.4rem 0.4rem #272424bd;
 
     picture img {
-      border: solid $grisOscuro;
+      border: solid 0.5rem $grisOscuro;
     }
+
+    box-shadow: 0.4rem 0.4rem #272424bd;
+
     li img {
       filter: invert(100%);
     }
@@ -28,5 +31,30 @@
 
   .boton-verde {
     border: 0.4rem solid $grisOscuro;
+  }
+  .texto-nosotros blockquote {
+    color: $blanco;
+  }
+
+  .anuncio-destacado {
+    li img {
+      filter: invert(100%);
+    }
+  }
+
+  .formulario {
+    label,
+    legend,
+    p {
+      color: $gris;
+    }
+
+    input:not([type="submit"]),
+    textarea,
+    select {
+      background-color: $grisOscuro;
+      border: 1px solid $grisOscuro;
+      color: $blanco;
+    }
   }
 }
